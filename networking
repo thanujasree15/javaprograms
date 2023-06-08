@@ -1,0 +1,23 @@
+import java.net.*;
+import java.io.*;
+public class FindIPaddress
+{
+ 
+public static void main(string args [])
+
+
+{
+
+InetAddress a= InetAddress.getLocalHost();
+
+System.out.println(“Host and address:” + a);
+
+System.out.println (“Host name:”+a.getHostName());
+
+String s=a.toString();
+
+System.out.println(“IP address” + s.substring(s.indexOf(“/”) +1));
+
+}
+
+}
